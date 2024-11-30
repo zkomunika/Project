@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Operasi Bilangan Real | CalClass</title>
+    <link rel="shortcut icon" type="x-icon" href="Image/images-removebg-preview.png">
+    <link rel="stylesheet" href="style.css">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.6.0/css/fontawesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.0/css/all.min.css" integrity="sha512-9xKTRVabjVeZmc+GUW8GgSmcREDunMM+Dt/GrzchfN8tkwHizc5RP4Ok/MXFFy5rIjJjzhndFScTceq5e6GvVQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <style>
+        .bil-real{
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .example {
+            background-color: #feece7;
+            padding: 10px;
+            border-left: 6px solid #f44336;
+            margin: 10px 0;
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <section class="sub-header">
+        <nav>
+            <a href="home.html"><img src="Image/images-removebg-preview.png" alt=""></a>
+            <div class="nav-links" id="navLinks">
+                <i class="fa fa-times" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="home.html">HOME</a></li>
+                    <li><a href="class.html">CLASS</a></li>
+                    <li><a href="calculator.html">CALCULATOR</a></li>
+                    <li><a href="about.html">ABOUT</a></li>
+                    <li><a href="contact.html">CONTACT</a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav>
+        <h1>Our Classroom</h1>
+    </section>
+
+    <!-- Materi Page Content -->
+    <section class="materi-content">
+        <div class="row">
+            <div class="materi-left">
+                <h1>Operasi pada Bilangan Real</h1>
+                <img src="Image/sistem-bilangan1.jpeg">
+                <div class="bil-real">
+                    <h2>Operasi Dasar pada Bilangan Real</h2>
+                    <p>Bilangan real mendukung operasi matematika yang mendasar dan sering digunakan dalam berbagai konteks, yaitu:</p>
+                    <ul>
+                        <li><strong>Penjumlahan dan Pengurangan</strong>
+                            <div class="example">
+                                Menghasilkan bilangan real lain.<br>
+                                Contoh: \( 2.5 + 3.4 = 5.9 \), \( 7 - 2.8 = 4.2 \).
+                            </div>
+                        </li>
+                        <li><strong>Perkalian</strong>
+                            <div class="example">
+                                Hasil perkalian dua bilangan real tetap bilangan real.<br>
+                                Contoh: \( 1.5 \times 3 = 4.5 \).
+                            </div>
+                        </li>
+                        <li><strong>Pembagian</strong>
+                            <div class="example">
+                                Operasi pembagian menghasilkan bilangan real, kecuali jika pembagi adalah nol (tidak terdefinisi).<br>
+                                Contoh: \( 6 \div 2 = 3 \).
+                            </div>
+                        </li>
+                        <li><strong>Perpangkatan dan Akar</strong>
+                            <div class="example">
+                                Operasi perpangkatan menghasilkan bilangan real, baik rasional maupun irasional.<br>
+                                Contoh: \( 2^3 = 8 \), \( \sqrt{2} \) adalah bilangan irasional.
+                            </div>
+                        </li>
+                    </ul>
+                
+                    <h2>Representasi Bilangan Real dalam Komputer</h2>
+                    <p>Bilangan real direpresentasikan dalam komputer menggunakan tipe data seperti <strong>floating-point</strong>, yang memiliki batasan presisi.</p>
+                    <ul>
+                        <li><strong>Floating-Point Representation</strong>
+                            <div class="example">
+                                Menyimpan bilangan desimal dengan tingkat presisi tertentu.<br>
+                                Contoh: \( 3.141592 \) direpresentasikan dalam format <strong>IEEE 754</strong>.
+                            </div>
+                        </li>
+                        <li><strong>Pembatasan pada Komputer</strong>
+                            <div class="example">
+                                <strong>Presisi terbatas</strong>: Tidak semua bilangan real dapat disimpan dengan akurasi sempurna.<br>
+                                Contoh: \( 1/3 = 0.333... \) hanya dihitung hingga digit tertentu.
+                            </div>
+                        </li>
+                        <li><strong>Error dalam Perhitungan</strong>
+                            <div class="example">
+                                <strong>Truncation Error</strong>: Kesalahan akibat pemotongan angka.<br>
+                                <strong>Round-off Error</strong>: Kesalahan akibat pembulatan angka ke presisi tertentu.
+                            </div>
+                        </li>
+                    </ul>
+                
+                    <h2>Hubungan dengan Konsep Matematika Lain</h2>
+                    <ul>
+                        <li><strong>Fungsi Matematis</strong>
+                            <div class="example">
+                                Bilangan real sering digunakan sebagai domain fungsi.<br>
+                                Contoh: \( f(x) = x^2 \), di mana \( x \) adalah bilangan real.
+                            </div>
+                        </li>
+                        <li><strong>Vektor di Dimensi Real</strong>
+                            <div class="example">
+                                Elemen vektor di ruang Euclidean menggunakan bilangan real.<br>
+                                Contoh: \( v = (1.2, -3.4) \).
+                            </div>
+                        </li>
+                        <li><strong>Algoritma yang Menggunakan Bilangan Real</strong>
+                            <div class="example">
+                                Banyak algoritma informatika, seperti interpolasi dan analisis data, memanfaatkan bilangan real.
+                            </div>
+                        </li>
+                    </ul>
+                
+                    <h2>Bilangan Kompleks sebagai Ekstensi Bilangan Real</h2>
+                    <ul>
+                        <li><strong>Definisi</strong>
+                            <div class="example">
+                                Bilangan kompleks berbentuk \( a + bi \), di mana \( a \) dan \( b \) adalah bilangan real, dan \( i = \sqrt{-1} \).
+                            </div>
+                        </li>
+                        <li><strong>Aplikasi</strong>
+                            <div class="example">
+                                Digunakan dalam pemrosesan sinyal, grafik komputer, dan mekanika kuantum.
+                            </div>
+                        </li>
+                    </ul>
+                
+                    <h2>Tantangan dalam Pemrograman dengan Bilangan Real</h2>
+                    <ul>
+                        <li><strong>Pembulatan</strong>
+                            <div class="example">
+                                Pembulatan angka dapat menyebabkan hasil tidak akurat.<br>
+                                Contoh: Dalam beberapa bahasa pemrograman, \( 0.1 + 0.2 \) menghasilkan \( 0.30000000000000004 \).
+                            </div>
+                        </li>
+                        <li><strong>Kecepatan Komputasi</strong>
+                            <div class="example">
+                                Operasi bilangan real lebih lambat dibandingkan bilangan bulat karena memerlukan perhitungan desimal.
+                            </div>
+                        </li>
+                        <li><strong>Library yang Mendukung Bilangan Real</strong>
+                            <div class="example">
+                                <strong>NumPy (Python)</strong>: Untuk perhitungan numerik.<br>
+                                <strong>Matplotlib (Python)</strong>: Untuk visualisasi data berbasis bilangan real.
+                            </div>
+                        </li>
+                    </ul>
+                
+                    <footer>
+                        <p>Informasi ini dapat menjadi bagian dari materi <strong>Cal Class</strong> untuk menjelaskan penerapan bilangan real dalam konteks kalkulus dan pemrograman. 😊</p>
+                    </footer>
+                </div>
+
+                <div class="comment-box">
+
+                    <h3>Leave a Comment</h3>
+
+                    <form class="comment-form">
+                        <input type="text" placeholder="Enter Name">
+                        <input type="email" placeholder="Enter Email">
+                        <textarea rows="10" placeholder="Your Comment"></textarea>
+                        <button type="submit" class="hero-btn red-btn">POST COMMENT</button>
+                    </form>
+                </div>
+
+            </div>
+
+            <div class="materi-right">
+                <h3>Lessons</h3>
+                <div>
+                    <span><a href="materi_pendahuluan.html">Pendahuluan Kalkulus</a></span>
+                </div>
+                <div>
+                    <span><a href="materi_sistem_bilangan.html">Sistem Bilangan Real</a></span>
+                </div>
+                <div>
+                    <span><a href="materi_sistem_bilangan2.html">Operasi pada Bilangan Real</a></span>
+                </div>
+                <div>
+                    <span><a href="materi_pertidaksamaan.html">Pertidaksamaan</a></span>
+                </div>
+                <div>
+                    <span><a href="materi_sistem_koordinat.html">Sistem Koordinat Kartesius</a></span>
+                </div>
+                <div>
+                    <span><a href="materi_tambahan.html">Tips dan Trik Belajar Kalkulus</a></span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <section class="footer">
+        <h4>About Us</h4>
+        <p>Belajar Kalkulus jadi lebih mudah dan seru di CalClass! Ikuti perjalananmu untuk memahami konsep-konsep dasar matematika dengan cara yang interaktif dan menyenangkan.</p>
+        <div class="icons">
+            <i class="fa-brands fa-facebook"></i>
+            <i class="fa-brands fa-twitter"></i>
+            <i class="fa-brands fa-instagram"></i>
+            <i class="fa-brands fa-youtube"></i>
+        </div>
+        <p>Made with <i class="fa fa-heart"></i> by CalClass Group<br>Copyright © 2024</p>
+    </section>
+
+    <!-- JS for Toggle Menu -->
+    <script>
+        var navLinks = document.getElementById("navLinks");
+
+        function showMenu() {
+            navLinks.style.right = "0";
+        }
+        function hideMenu() {
+            navLinks.style.right = "-200px";
+        }
+
+    </script>
+</body>
+</html>

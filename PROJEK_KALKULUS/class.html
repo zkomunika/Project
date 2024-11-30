@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Classroom | CalClass</title>
+    <link rel="shortcut icon" type="x-icon" href="Image/images-removebg-preview.png">
+    <link rel="stylesheet" href="style.css">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.6.0/css/fontawesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.0/css/all.min.css" integrity="sha512-9xKTRVabjVeZmc+GUW8GgSmcREDunMM+Dt/GrzchfN8tkwHizc5RP4Ok/MXFFy5rIjJjzhndFScTceq5e6GvVQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <style>
+        .sub-header{
+            background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url(Image/istockphoto-1476976242-612x612_upscaled.jpg);
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <section class="sub-header">
+        <nav>
+            <a href="home.html"><img src="Image/images-removebg-preview.png" alt=""></a>
+            <div class="nav-links" id="navLinks">
+                <i class="fa fa-times" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="home.html">HOME</a></li>
+                    <li><a href="class.html">CLASS</a></li>
+                    <li><a href="calculator.html">CALCULATOR</a></li>
+                    <li><a href="about.html">ABOUT</a></li>
+                    <li><a href="contact.html">CONTACT</a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav>
+        <h1>Our Classroom</h1>
+    </section>
+
+    <!-- Slider Materi -->
+    <section class="slide">
+    <div class="container">
+        <div class="slider">
+            <div class="slides" style="--img: url('Image/pixelcut-export.jpg')">
+                <div class="content">
+                    <h2>TIPS & TRIK</h2>
+                    <p>"Matematika adalah bahasa alam semesta, dan kalkulus adalah alat untuk memahami bahasa itu. Semakin Anda menguasainya, semakin banyak pintu kesempatan yang terbuka."</p>
+                    <a href="materi_tambahan.html" class="hero-btn">Pelajari Lebih Lanjut</a>
+                </div>
+            </div>
+            <div class="slides" style="--img: url('Image/istockphoto-467211027-612x612-x-NU_k5eX-transformed.jpeg')">
+                <div class="content">
+                    <h2>APA ITU KALKULUS ?</h2>
+                    <p>Kalkulus adalah cabang matematika yang mempelajari perubahan dan akumulasi. Kalkulus terdiri dari dua bagian utama: Diferensial dan Integral</p>
+                    <a href="materi_pendahuluan.html" class="hero-btn">Pelajari Lebih Lanjut</a>
+                </div>
+            </div>
+            <div class="slides" style="--img: url('Image/freepik__enhance__84293.png')">
+                <div class="content">
+                    <h2>SISTEM BILANGAN REAL</h2>
+                    <p>Bilangan real adalah semua bilangan yang dapat direpresentasikan pada garis bilangan.Dalam matematika, bilangan real adalah nilai kuantitas kontinu yang dapat dinyatakan dalam garis bilangan garis real atau nyata.</p>
+                    <a href="materi_sistem_bilangan.html" class="hero-btn">Pelajari Lebih Lanjut</a>
+                </div>
+            </div>
+            <div class="slides" style="--img: url('Image/freepik__enhance__84294.png')">
+                <div class="content">
+                    <h2>OPERASI BILANGAN REAL</h2>
+                    <p>Bilangan real mencakup operasi dasar yang digunakan dalam berbagai konteks matematika dan informatika.</p>
+                    <a href="materi_sistem_bilangan2.html" class="hero-btn">Pelajari Lebih Lanjut</a>
+                </div>
+            </div>
+            <div class="slides" style="--img: url('Image/istockphoto-467782423-612x612.jpeg')">
+                <div class="content">
+                    <h2>PERTIDAKSAMAAN</h2>
+                    <p>Pertidaksamaan adalah hubungan yang menunjukkan bahwa suatu ekspresi lebih besar, lebih kecil, lebih besar sama dengan, atau lebih kecil sama dengan ekspresi lainnya.</p>
+                    <a href="materi_pertidaksamaan.html" class="hero-btn">Pelajari Lebih Lanjut</a>
+                </div>
+            </div>
+            <div class="slides" style="--img: url('Image/istockphoto-1159806988-612x612.jpg')">
+                <div class="content">
+                    <h2 style="font-size: 2.4em;">SISTEM KOORDINAT KARTESIUS</h2>
+                    <p>Sistem koordinat Kartesius adalah sistem koordinat yang memuat angka-angka tertentu di setiap bidangnya yang ditulis dalam bentuk (x, y). Sistem ini ditemukan oleh Rene Descartes.</p>
+                    <a href="materi_sistem_koordinat.html" class="hero-btn">Pelajari Lebih Lanjut</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="buttons">
+            <span class="prev"></span>
+            <span class="next"></span>
+        </div>
+    </div>
+
+    <script>
+        let next = document.querySelector('.next');
+        let prev = document.querySelector('.prev');
+        let slider = document.querySelector('.slider');
+
+        next.addEventListener('click', function(){
+            let slides = document.querySelectorAll('.slides');
+            slider.appendChild(slides[0]);
+        })
+        
+        prev.addEventListener('click', function () {
+            let slides = document.querySelectorAll('.slides');
+            slider.prepend(slides[slides.length - 1]);
+        })
+
+    </script>
+
+    </section>
+
+    <!-- Footer -->
+    <section class="footer">
+        <h4>About Us</h4>
+        <p>Belajar Kalkulus jadi lebih mudah dan seru di CalClass! Ikuti perjalananmu untuk memahami konsep-konsep dasar matematika dengan cara yang interaktif dan menyenangkan.</p>
+        <div class="icons">
+            <i class="fa-brands fa-facebook"></i>
+            <i class="fa-brands fa-twitter"></i>
+            <i class="fa-brands fa-instagram"></i>
+            <i class="fa-brands fa-youtube"></i>
+        </div>
+        <p>Made with <i class="fa fa-heart"></i> by CalClass Group<br>Copyright © 2024</p>
+    </section>
+
+    <!-- JS for Toggle Menu -->
+    <script>
+        var navLinks = document.getElementById("navLinks");
+
+        function showMenu() {
+            navLinks.style.right = "0";
+        }
+        function hideMenu() {
+            navLinks.style.right = "-200px";
+        }
+
+    </script>
+</body>
+</html>

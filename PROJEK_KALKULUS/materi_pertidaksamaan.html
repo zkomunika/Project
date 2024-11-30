@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pertidaksamaan | CalClass</title>
+    <link rel="shortcut icon" type="x-icon" href="Image/images-removebg-preview.png">
+    <link rel="stylesheet" href="style.css">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.6.0/css/fontawesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.0/css/all.min.css" integrity="sha512-9xKTRVabjVeZmc+GUW8GgSmcREDunMM+Dt/GrzchfN8tkwHizc5RP4Ok/MXFFy5rIjJjzhndFScTceq5e6GvVQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        .example {
+            background-color: #f9f9f9;
+            border-left: 5px solid #f44336;
+            padding: 10px;
+            margin: 10px 0;
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <section class="sub-header">
+        <nav>
+            <a href="home.html"><img src="Image/images-removebg-preview.png" alt=""></a>
+            <div class="nav-links" id="navLinks">
+                <i class="fa fa-times" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="home.html">HOME</a></li>
+                    <li><a href="class.html">CLASS</a></li>
+                    <li><a href="calculator.html">CALCULATOR</a></li>
+                    <li><a href="about.html">ABOUT</a></li>
+                    <li><a href="contact.html">CONTACT</a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav>
+        <h1>Our Classroom</h1>
+    </section>
+
+    <!-- Materi Page Content -->
+    <section class="materi-content">
+        <div class="row">
+            <div class="materi-left">
+                <h1>Pertidaksamaan</h1>
+                <img src="Image/istockphoto-2176025208-612x612.jpg">
+                <h2>A. Pengertian</h2>
+                <p>Pertidaksamaan adalah hubungan yang menunjukkan bahwa suatu ekspresi lebih besar, lebih kecil, lebih besar sama dengan, atau lebih kecil sama dengan ekspresi lainnya.</p>
+                <h3>Simbol:</h3>
+                <ul>
+                    <li>&gt; : lebih besar dari.</li>
+                    <li>&lt; : lebih kecil dari.</li>
+                    <li>≥ : lebih besar atau sama dengan.</li>
+                    <li>≤ : lebih kecil atau sama dengan.</li>
+                </ul>
+                <h3>Cara menyelesaikan:</h3>
+                <ul>
+                    <li>Tambahkan kedua sisi dengan bilangan yang sama.</li>
+                    <li>Kalikan kedua sisi dengan bilangan positif.</li>
+                    <li>Kalikan kedua sisi dengan bilangan negatif, tetapi tanda ketidaksamaan berubah.</li>
+                </ul>
+                <h3>Contoh:</h3>
+                <p>2x - 1 &lt; x + 3</p>
+                <p>2x - x &lt; 3 + 1</p>
+                <p>x &lt; 4</p>
+
+                <h2>B. Jenis-Jenis Pertidaksamaan</h2>
+                <ol>
+                    <li>
+                        <strong>Pertidaksamaan Linear Satu Variabel</strong>
+                        <div class="formula">ax + b > 0 atau ax + b < 0</div>
+                        <div class="example">
+                            Contoh: <div class="formula">3x - 5 ≤ 10</div>
+                            Penyelesaian: <div class="formula">3x ≤ 15 ⟹ x ≤ 5</div>
+                        </div>
+                    </li>
+                    <li>
+                        <strong>Pertidaksamaan Linear Dua Variabel</strong>
+                        <div class="formula">ax + by ≥ c atau ax + by ≤ c</div>
+                        <div class="example">
+                            Contoh: <div class="formula">2x + 3y ≥ 6</div>
+                        </div>
+                    </li>
+                    <li>
+                        <strong>Pertidaksamaan Kuadrat</strong>
+                        <div class="formula">ax² + bx + c > 0 atau ax² + bx + c < 0</div>
+                        <div class="example">
+                            Contoh: <div class="formula">x² - 5x + 6 > 0</div>
+                            Faktorisasi: <div class="formula">(x-2)(x-3) > 0</div>
+                            Solusi: <div class="formula">x < 2 atau x > 3</div>
+                        </div>
+                    </li>
+                    <li>
+                        <strong>Pertidaksamaan Rasional</strong>
+                        <div class="formula">p(x)/q(x) > 0 atau p(x)/q(x) < 0</div>
+                        <div class="example">
+                            Penyelesaian: Tentukan nilai nol pembilang dan penyebut.
+                        </div>
+                    </li>
+                </ol>
+            
+                <h2>C. Penyelesaian Grafis Pertidaksamaan</h2>
+                <p>
+                    Untuk pertidaksamaan dua variabel, penyelesaian sering dilakukan dengan menggambar grafik. Langkah-langkahnya:
+                </p>
+                <ol>
+                    <li>Gambarkan garis batas dari persamaan (gunakan garis putus-putus untuk "<" atau ">" dan garis solid untuk "≤" atau "≥").</li>
+                    <li>Tentukan daerah solusi dengan memilih satu titik uji.</li>
+                    <li>Arsirlah daerah yang memenuhi pertidaksamaan.</li>
+                </ol>
+            
+                <h2>D. Aplikasi Pertidaksamaan dalam Kehidupan Sehari-Hari</h2>
+                <ol>
+                    <li>
+                        <strong>Manajemen Keuangan</strong>
+                        <div class="example">
+                            Pertidaksamaan digunakan untuk membatasi pengeluaran dalam anggaran tertentu. Contoh:
+                            <div class="formula">x + y ≤ 10 juta</div>
+                        </div>
+                    </li>
+                    <li>
+                        <strong>Perencanaan Produksi</strong>
+                        <p>Pertidaksamaan linear sering digunakan untuk memodelkan batasan bahan baku, tenaga kerja, atau mesin.</p>
+                    </li>
+                    <li>
+                        <strong>Penjadwalan dan Optimisasi</strong>
+                        <p>Pertidaksamaan digunakan dalam algoritma seperti linear programming untuk memecahkan masalah optimisasi.</p>
+                    </li>
+                </ol>
+            
+                <h2>E. Relevansi Pertidaksamaan dengan Jurusan Informatika</h2>
+                <ol>
+                    <li>
+                        <strong>Algoritma dan Struktur Data</strong>
+                        <div class="example">
+                            Pertidaksamaan digunakan dalam analisis kompleksitas waktu. Misalnya:
+                            <div class="formula">T(n) = O(n²)</div>
+                        </div>
+                    </li>
+                    <li>
+                        <strong>Pembelajaran Mesin (Machine Learning)</strong>
+                        <p>Pertidaksamaan digunakan dalam model optimisasi seperti support vector machines (SVM) untuk menentukan hyperplane terbaik yang memisahkan data.</p>
+                    </li>
+                    <li>
+                        <strong>Kriptografi</strong>
+                        <p>Pertidaksamaan digunakan untuk menentukan batas keamanan algoritma berdasarkan fungsi-fungsi matematis.</p>
+                    </li>
+                    <li>
+                        <strong>Grafik dan Visualisasi Data</strong>
+                        <p>Pertidaksamaan digunakan untuk menentukan batas daerah plot dalam pembuatan visualisasi data.</p>
+                    </li>
+                    <li>
+                        <strong>Pemrograman Linear dan Integer</strong>
+                        <p>Pemrograman linear adalah metode penting dalam informatika untuk menyelesaikan masalah optimisasi dengan batasan yang direpresentasikan sebagai pertidaksamaan.</p>
+                    </li>
+                </ol>
+            
+                <h2>F. Simulasi Masalah Nyata dengan Pertidaksamaan</h2>
+                <p><strong>Masalah Optimalisasi Jaringan</strong></p>
+                <p>Misalkan seorang mahasiswa jurusan informatika sedang merancang jaringan dengan batasan tertentu:</p>
+                <div class="formula">x₁ + x₂ ≤ 100 Mbps (kapasitas jaringan)</div>
+                <div class="formula">2x₁ + 3x₂ ≤ 300 Mbps (penggunaan sumber daya server)</div>
+                <p>Dengan menyelesaikan sistem pertidaksamaan tersebut, mahasiswa dapat menentukan distribusi bandwidth optimal.</p>
+            
+                <h2>Kesimpulan</h2>
+                <p>Pertidaksamaan adalah alat matematika yang penting, tidak hanya dalam studi kalkulus tetapi juga dalam berbagai aplikasi praktis di jurusan informatika. Penerapan pertidaksamaan memungkinkan mahasiswa memahami dan memecahkan masalah kompleks dalam optimisasi, perancangan sistem, dan analisis data.</p>
+
+                <div class="comment-box">
+
+                    <h3>Leave a Comment</h3>
+
+                    <form class="comment-form">
+                        <input type="text" placeholder="Enter Name">
+                        <input type="email" placeholder="Enter Email">
+                        <textarea rows="10" placeholder="Your Comment"></textarea>
+                        <button type="submit" class="hero-btn red-btn">POST COMMENT</button>
+                    </form>
+                </div>
+            </div>
+
+            <div class="materi-right">
+                <h3>Lessons</h3>
+                <div>
+                    <span><a href="materi_pendahuluan.html">Pendahuluan Kalkulus</a></span>
+                </div>
+                <div>
+                    <span><a href="materi_sistem_bilangan.html">Sistem Bilangan Real</a></span>
+                </div>
+                <div>
+                    <span><a href="materi_sistem_bilangan2.html">Operasi pada Bilangan Real</a></span>
+                </div>
+                <div>
+                    <span><a href="materi_pertidaksamaan.html">Pertidaksamaan</a></span>
+                </div>
+                <div>
+                    <span><a href="materi_sistem_koordinat.html">Sistem Koordinat Kartesius</a></span>
+                </div>
+                <div>
+                    <span><a href="materi_tambahan.html">Tips dan Trik Belajar Kalkulus</a></span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <section class="footer">
+        <h4>About Us</h4>
+        <p>Belajar Kalkulus jadi lebih mudah dan seru di CalClass! Ikuti perjalananmu untuk memahami konsep-konsep dasar matematika dengan cara yang interaktif dan menyenangkan.</p>
+        <div class="icons">
+            <i class="fa-brands fa-facebook"></i>
+            <i class="fa-brands fa-twitter"></i>
+            <i class="fa-brands fa-instagram"></i>
+            <i class="fa-brands fa-youtube"></i>
+        </div>
+        <p>Made with <i class="fa fa-heart"></i> by CalClass Group<br>Copyright © 2024</p>
+    </section>
+
+    <!-- JS for Toggle Menu -->
+    <script>
+        var navLinks = document.getElementById("navLinks");
+
+        function showMenu() {
+            navLinks.style.right = "0";
+        }
+        function hideMenu() {
+            navLinks.style.right = "-200px";
+        }
+
+    </script>
+</body>
+</html>

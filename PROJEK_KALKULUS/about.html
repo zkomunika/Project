@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us | CalClass</title>
+    <link rel="shortcut icon" type="x-icon" href="Image/images-removebg-preview.png">
+    <link rel="stylesheet" href="style.css">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.6.0/css/fontawesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.0/css/all.min.css" integrity="sha512-9xKTRVabjVeZmc+GUW8GgSmcREDunMM+Dt/GrzchfN8tkwHizc5RP4Ok/MXFFy5rIjJjzhndFScTceq5e6GvVQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <style>
+        .sub-header{
+            background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url(Image/istockphoto-506799337-612x612_upscaled.jpg);
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <section class="sub-header">
+        <nav>
+            <a href="home.html"><img src="Image/images-removebg-preview.png" alt=""></a>
+            <div class="nav-links" id="navLinks">
+                <i class="fa fa-times" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="home.html">HOME</a></li>
+                    <li><a href="class.html">CLASS</a></li>
+                    <li><a href="calculator.html">CALCULATOR</a></li>
+                    <li><a href="about.html">ABOUT</a></li>
+                    <li><a href="contact.html">CONTACT</a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav>
+        <h1>About Us</h1>
+    </section>
+
+    <!-- Members -->
+    <section>
+        <div class="team-section">
+            <h1>TEAM</h1>
+            <p>
+                Kami adalah tim yang berkomitmen untuk memberikan pengalaman pembelajaran terbaik dalam Kalkulus. Dengan semangat kolaborasi, kami mengembangkan Cal Class sebagai platform yang inovatif dan menyenangkan.
+            </p>
+            <div class="team-container">
+                <div class="team-member">
+                    <img src="Image/WhatsApp%20Image%202024-11-25%20at%2010.40.46_10738686.jpg" />
+                    <h3>Astri Rahmawati</h3>
+                    <p>247006111039</p>
+                    <div class="social-icons">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-whatsapp"></i></a>
+                    </div>
+                </div>
+                <div class="team-member">
+                    <img src="Image/IMG-20240403-WA0034.jpg" />
+                    <h3>M Zaky Al Mubarok</h3>
+                    <p>247006111041</p>
+                    <div class="social-icons">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-whatsapp"></i></a>
+                    </div>
+                </div>
+                <div class="team-member">
+                    <img src="Image/WhatsApp%20Image%202024-11-24%20at%2011.39.55_2482546f.jpg" />
+                    <h3>Nayla Qurrota Aini</h3>
+                    <p>247006111043</p>
+                    <div class="social-icons">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-whatsapp"></i></a>
+                    </div>
+                </div>
+                <div class="team-member">
+                    <img src="Image/WhatsApp%20Image%202024-11-24%20at%2012.04.42_b375b759.jpg" />
+                    <h3>Irsyad Khoerul Umam</h3>
+                    <p>247006111041055</p>
+                    <div class="social-icons">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-whatsapp"></i></a>
+                    </div>
+    </section>
+
+    <!-- Footer -->
+    <section class="footer">
+        <h4>About Us</h4>
+        <p>Belajar Kalkulus jadi lebih mudah dan seru di CalClass! Ikuti perjalananmu untuk memahami konsep-konsep dasar matematika dengan cara yang interaktif dan menyenangkan.</p>
+        <div class="icons">
+            <i class="fa-brands fa-facebook"></i>
+            <i class="fa-brands fa-twitter"></i>
+            <i class="fa-brands fa-instagram"></i>
+            <i class="fa-brands fa-youtube"></i>
+        </div>
+        <p>Made with <i class="fa fa-heart"></i> by CalClass Group<br>Copyright © 2024</p>
+    </section>
+
+    
+
+    <!-- JS for Toggle Menu -->
+    <script>
+        var navLinks = document.getElementById("navLinks");
+
+        function showMenu() {
+            navLinks.style.right = "0";
+        }
+        function hideMenu() {
+            navLinks.style.right = "-200px";
+        }
+
+    </script>
+</body>
+</html>

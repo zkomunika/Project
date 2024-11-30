@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sistem Bilangan Real | CalClass</title>
+    <link rel="shortcut icon" type="x-icon" href="Image/images-removebg-preview.png">
+    <link rel="stylesheet" href="style.css">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.6.0/css/fontawesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.0/css/all.min.css" integrity="sha512-9xKTRVabjVeZmc+GUW8GgSmcREDunMM+Dt/GrzchfN8tkwHizc5RP4Ok/MXFFy5rIjJjzhndFScTceq5e6GvVQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <style>
+        ul {
+            margin: 10px 0;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+        }
+        th, td {
+            border: 1px solid #ccc;
+            padding: 10px;
+            text-align: left;
+        }
+        th {
+            background-color: #f2f2f2;
+        }
+        .bil-real{
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .example {
+            background-color: #feece7;
+            padding: 10px;
+            border-left: 6px solid #f44336;
+            margin: 10px 0;
+        }
+    </style>
+
+</head>
+<body>
+    <!-- Header -->
+    <section class="sub-header">
+        <nav>
+            <a href="home.html"><img src="Image/images-removebg-preview.png" alt=""></a>
+            <div class="nav-links" id="navLinks">
+                <i class="fa fa-times" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="home.html">HOME</a></li>
+                    <li><a href="class.html">CLASS</a></li>
+                    <li><a href="calculator.html">CALCULATOR</a></li>
+                    <li><a href="about.html">ABOUT</a></li>
+                    <li><a href="contact.html">CONTACT</a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav>
+        <h1>Our Classroom</h1>
+    </section>
+
+    <!-- Classroom Page Content -->
+    <section class="materi-content">
+        <div class="row">
+            <div class="materi-left">
+                <h1>Sistem Bilangan Real</h1>
+                <img src="Image/pixelcut-export.jpeg">
+                <div class="bil-real">
+                    <h2>A. Pengertian Bilangan Real</h2>
+                    <p>Bilangan real mencakup semua bilangan yang dapat direpresentasikan pada garis bilangan, termasuk bilangan positif, negatif, nol, bilangan bulat, dan bilangan desimal.</p>
+                    <ul>
+                        <li><strong>Ciri-ciri Bilangan Real:</strong></li>
+                        <li>Merupakan nilai kuantitas kontinu yang berada di garis bilangan.</li>
+                        <li>Termasuk bilangan rasional dan irasional.</li>
+                    </ul>
+                
+                    <h2>B. Bilangan Rasional</h2>
+                
+                    <h3>Definisi</h3>
+                    <p>Bilangan rasional adalah bilangan yang dapat ditulis dalam bentuk pecahan <i>a/b</i>, di mana <i>a</i> dan <i>b</i> adalah bilangan bulat, dan <i>b ≠ 0</i>.</p>
+                
+                    <h3>Ciri-ciri</h3>
+                    <ul>
+                        <li>Dapat ditulis dalam bentuk pecahan.</li>
+                        <li>Bilangan dalam bentuk desimal berhenti atau berulang.</li>
+                        <li>Termasuk bilangan bulat, seperti <i>1, -2, 0</i>.</li>
+                    </ul>
+                
+                    <h3>Contoh Bilangan Rasional</h3>
+                    <div class="example">
+                        <ul>
+                            <li><i>3/4</i></li>
+                            <li><i>7</i></li>
+                            <li><i>-5</i></li>
+                            <li><i>0</i></li>
+                        </ul>
+                    </div>
+                
+                    <h3>Simbol-Simbol Penting</h3>
+                    <ul>
+                        <li><strong>ℕ</strong>: Bilangan asli (<i>1, 2, 3, ...</i>).</li>
+                        <li><strong>ℙ</strong>: Bilangan positif (<i>1, 2, 3, ...</i>).</li>
+                        <li><strong>ℤ</strong>: Bilangan bulat (<i>-1, 0, 1, 2, ...</i>).</li>
+                        <li><strong>ℚ</strong>: Bilangan rasional (<i>1/2, 1, ...</i>).</li>
+                    </ul>
+                
+                    <h2>C. Bilangan Irasional</h2>
+                
+                    <h3>Definisi</h3>
+                    <p>Bilangan irasional adalah bilangan yang tidak dapat ditulis dalam bentuk pecahan <i>a/b</i>, di mana <i>a</i> dan <i>b</i> adalah bilangan bulat.</p>
+                
+                    <h3>Ciri-ciri</h3>
+                    <ul>
+                        <li>Tidak dapat ditulis sebagai pecahan.</li>
+                        <li>Desimal tidak berulang dan tidak terhingga.</li>
+                        <li>Hasil akar kuadrat yang bukan bilangan kuadrat sempurna adalah bilangan irasional.</li>
+                    </ul>
+                
+                    <h3>Contoh Bilangan Irasional</h3>
+                    <div class="example">
+                        <ul>
+                            <li><i>π</i> (pi): <i>3.14159265358979 ...</i></li>
+                            <li><i>√2</i>: <i>1.41421356237309 ...</i></li>
+                            <li><i>e</i>: <i>2.718281828459 ...</i></li>
+                        </ul>
+                    </div>
+                
+                    <h2>D. Perbedaan Utama antara Bilangan Rasional dan Irasional</h2>
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Aspek</th>
+                                <th>Bilangan Rasional</th>
+                                <th>Bilangan Irasional</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Bentuk Representasi</td>
+                                <td>Dapat ditulis sebagai pecahan.</td>
+                                <td>Tidak dapat ditulis sebagai pecahan.</td>
+                            </tr>
+                            <tr>
+                                <td>Desimal</td>
+                                <td>Berhenti atau berulang.</td>
+                                <td>Tidak berulang dan tidak terhingga.</td>
+                            </tr>
+                            <tr>
+                                <td>Contoh</td>
+                                <td><i>5.75</i> (<i>23/4</i>).</td>
+                                <td><i>π</i>, <i>√2</i>.</td>
+                            </tr>
+                        </tbody>
+                    </table>
+
+                </div>
+                <div class="comment-box">
+
+                    <h3>Leave a Comment</h3>
+
+                    <form class="comment-form">
+                        <input type="text" placeholder="Enter Name">
+                        <input type="email" placeholder="Enter Email">
+                        <textarea rows="10" placeholder="Your Comment"></textarea>
+                        <button type="submit" class="hero-btn red-btn">POST COMMENT</button>
+                    </form>
+                </div>
+
+            </div>
+
+            <div class="materi-right">
+                <h3>Lessons</h3>
+                <div>
+                    <span><a href="materi_pendahuluan.html">Pendahuluan Kalkulus</a></span>
+                </div>
+                <div>
+                    <span><a href="materi_sistem_bilangan.html">Sistem Bilangan Real</a></span>
+                </div>
+                <div>
+                    <span><a href="materi_sistem_bilangan2.html">Operasi pada Bilangan Real</a></span>
+                </div>
+                <div>
+                    <span><a href="materi_pertidaksamaan.html">Pertidaksamaan</a></span>
+                </div>
+                <div>
+                    <span><a href="materi_sistem_koordinat.html">Sistem Koordinat Kartesius</a></span>
+                </div>
+                <div>
+                    <span><a href="materi_tambahan.html">Tips dan Trik Belajar Kalkulus</a></span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <section class="footer">
+        <h4>About Us</h4>
+        <p>Belajar Kalkulus jadi lebih mudah dan seru di CalClass! Ikuti perjalananmu untuk memahami konsep-konsep dasar matematika dengan cara yang interaktif dan menyenangkan.</p>
+        <div class="icons">
+            <i class="fa-brands fa-facebook"></i>
+            <i class="fa-brands fa-twitter"></i>
+            <i class="fa-brands fa-instagram"></i>
+            <i class="fa-brands fa-youtube"></i>
+        </div>
+        <p>Made with <i class="fa fa-heart"></i> by CalClass Group<br>Copyright © 2024</p>
+    </section>
+
+    <!-- JS for Toggle Menu -->
+    <script>
+        var navLinks = document.getElementById("navLinks");
+
+        function showMenu() {
+            navLinks.style.right = "0";
+        }
+        function hideMenu() {
+            navLinks.style.right = "-200px";
+        }
+
+    </script>
+</body>
+</html>

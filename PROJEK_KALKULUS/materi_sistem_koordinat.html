@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sistem Koordinat Kartesius | CalClass</title>
+    <link rel="shortcut icon" type="x-icon" href="Image/images-removebg-preview.png">
+    <link rel="stylesheet" href="style.css">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.6.0/css/fontawesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.0/css/all.min.css" integrity="sha512-9xKTRVabjVeZmc+GUW8GgSmcREDunMM+Dt/GrzchfN8tkwHizc5RP4Ok/MXFFy5rIjJjzhndFScTceq5e6GvVQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <style>
+        ul {
+            margin: 0;
+            padding: 0 20px;
+        }
+        li {
+            margin-bottom: 10px;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+        }
+
+        table, th, td {
+            border: 1px solid #ccc;
+        }
+
+        th, td {
+            padding: 10px;
+            text-align: left;
+        }
+
+        th {
+            background-color: #f2f2f2;
+        }
+
+        pre {
+            background-color: #eaeaea;
+            padding: 10px;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <section class="sub-header">
+        <nav>
+            <a href="home.html"><img src="Image/images-removebg-preview.png" alt=""></a>
+            <div class="nav-links" id="navLinks">
+                <i class="fa fa-times" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="home.html">HOME</a></li>
+                    <li><a href="class.html">CLASS</a></li>
+                    <li><a href="calculator.html">CALCULATOR</a></li>
+                    <li><a href="about.html">ABOUT</a></li>
+                    <li><a href="contact.html">CONTACT</a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav>
+        <h1>Our Classroom</h1>
+    </section>
+
+    <!-- Materi Page Content -->
+    <section class="materi-content">
+        <div class="row">
+            <div class="materi-left">
+                <h1>Sistem Koordinat Kartesius</h1>
+                <img src="Image/istockphoto-1077688150-612x612.jpg">
+                <h2>A. Pengertian</h2>
+                <p>Sistem koordinat Kartesius adalah sistem koordinat yang memuat angka-angka tertentu di setiap bidangnya yang ditulis dalam bentuk (x, y). Sistem ini ditemukan oleh Rene Descartes.</p>
+                <h2>B. Ciri-ciri:</h2>
+                <ul>
+                    <li>Dua garis tegak lurus yang saling berpotongan di titik asal (0, 0).</li>
+                    <li>Terdiri dari sumbu X (horizontal) dan Y (vertikal).</li>
+                    <li>Bidang Kartesius dibagi menjadi empat kuadran:
+                        <ul>
+                            <li type="a" style="list-style-position: inside;">Kuadran I: x &gt; 0, y &gt; 0</li>
+                            <li type="a" style="list-style-position: inside;">Kuadran II: x &lt; 0, y &gt; 0</li>
+                            <li type="a" style="list-style-position: inside;">Kuadran III: x &lt; 0, y &lt; 0</li>
+                            <li type="a" style="list-style-position: inside;">Kuadran IV: x &gt; 0, y &lt; 0</li>
+                        </ul>
+                    </li>
+                </ul>
+
+                <h2>C. Elemen-Elemen Penting dalam Koordinat Kartesius</h2>
+                <ol>
+                    <li>
+                        <strong>Titik Koordinat</strong><br>
+                        Setiap titik pada bidang Kartesius dinyatakan sebagai pasangan terurut <code>(x, y)</code>, di mana:<br>
+                        <ul>
+                            <li><code>x</code>: posisi horizontal (sumbu X).</li>
+                            <li><code>y</code>: posisi vertikal (sumbu Y).</li>
+                        </ul>
+                        Contoh: Titik <code>(3, -2)</code> berarti 3 unit ke kanan dari sumbu Y dan 2 unit ke bawah dari sumbu X.
+                    </li>
+                    <li>
+                        <strong>Titik Asal</strong><br>
+                        Titik <code>(0, 0)</code>, disebut sebagai titik asal, adalah tempat perpotongan sumbu X dan Y.
+                    </li>
+                    <li>
+                        <strong>Persamaan Garis Lurus</strong><br>
+                        Bentuk umum persamaan garis lurus pada bidang Kartesius adalah:
+                        <pre>y = mx + c</pre>
+                        Di mana:
+                        <ul>
+                            <li><code>m</code>: kemiringan (gradien) garis.</li>
+                            <li><code>c</code>: titik potong garis dengan sumbu Y.</li>
+                        </ul>
+                    </li>
+                    <li>
+                        <strong>Jarak Antar Titik</strong><br>
+                        Rumus untuk menghitung jarak antara dua titik <code>(x<sub>1</sub>, y<sub>1</sub>)</code> dan <code>(x<sub>2</sub>, y<sub>2</sub>)</code> adalah:
+                        <pre>d = √((x<sub>2</sub> - x<sub>1</sub>)² + (y<sub>2</sub> - y<sub>1</sub>)²)</pre>
+                    </li>
+                    <li>
+                        <strong>Titik Tengah</strong><br>
+                        Rumus untuk menghitung titik tengah antara dua titik <code>(x<sub>1</sub>, y<sub>1</sub>)</code> dan <code>(x<sub>2</sub>, y<sub>2</sub>)</code> adalah:
+                        <pre>Titik Tengah = ( (x<sub>1</sub> + x<sub>2</sub>) / 2, (y<sub>1</sub> + y<sub>2</sub>) / 2 )</pre>
+                    </li>
+                </ol>
+
+                <h2>D. Pembagian Kuadran</h2>
+                <table>
+                    <tr>
+                        <th>Kuadran</th>
+                        <th>Syarat</th>
+                        <th>Contoh Titik</th>
+                    </tr>
+                    <tr>
+                        <td>I</td>
+                        <td><code>x > 0, y > 0</code></td>
+                        <td><code>(3, 5)</code></td>
+                    </tr>
+                    <tr>
+                        <td>II</td>
+                        <td><code>x < 0, y > 0</code></td>
+                        <td><code>(-4 , 6)</code></td>
+                    </tr>
+                    <tr>
+                        <td>III</td>
+                        <td><code>x < 0, y < 0</code></td>
+                        <td><code>(-7, -3)</code></td>
+                    </tr>
+                    <tr>
+                        <td>IV</td>
+                        <td><code>x > 0, y < 0</code></td>
+                        <td><code>(8, -2)</code></td>
+                    </tr>
+                </table>
+
+                <h2>E. Aplikasi Sistem Koordinat Kartesius</h2>
+                <ol>
+                    <li><strong>Grafik Fungsi Matematika</strong><br>
+                        Koordinat Kartesius digunakan untuk memvisualisasikan berbagai fungsi matematika seperti fungsi linear, kuadrat, atau trigonometri.</li>
+                    <li><strong>Pemodelan Geometri</strong><br>
+                        Sistem ini digunakan untuk memodelkan posisi, jarak, dan hubungan antar objek geometris.</li>
+                    <li><strong>Sistem Navigasi</strong><br>
+                        Sistem GPS (Global Positioning System) memanfaatkan prinsip koordinat Kartesius dalam perhitungan posisi.</li>
+                </ol>
+
+                <h2>F. Relevansi Sistem Koordinat Kartesius dengan Jurusan Informatika</h2>
+                <ol>
+                    <li><strong>Grafik Komputer (Computer Graphics)</strong><br>
+                        Dalam pembuatan game atau animasi, koordinat Kartesius digunakan untuk menentukan posisi, arah, dan gerakan objek pada layar.</li>
+                    <li><strong>Algoritma Pencarian Jalur (Pathfinding)</strong><br>
+                        Sistem ini digunakan untuk merepresentasikan posisi dan arah objek dalam algoritma seperti A* atau Dijkstra.</li>
+                    <li><strong>Pembelajaran Mesin (Machine Learning)</strong><br>
+                        Dalam visualisasi data, koordinat Kartesius digunakan untuk memetakan hubungan antara dua variabel atau lebih.</li>
+                    <li><strong>Pemrograman Visualisasi Data</strong><br>
+                        Koordinat Kartesius adalah dasar dalam grafik visualisasi seperti diagram sebar (*scatter plot*) atau histogram.</li>
+                    <li><strong>Pengolahan Citra Digital</strong><br>
+                        Dalam pemrosesan gambar, setiap piksel pada gambar direpresentasikan dalam sistem koordinat.</li>
+                    <li><strong>Pengembangan Sistem GIS (Geographic Information Systems)</strong><br>
+                        Dalam sistem informasi geografis, koordinat Kartesius digunakan untuk memetakan lokasi geografis.</li>
+                    <li><strong>Simulasi Fisika</strong><br>
+                        Koordinat Kartesius sering digunakan untuk mensimulasikan gerakan benda atau interaksi objek dalam game.</li>
+                </ol>
+
+                <h2>G. Studi Kasus: Aplikasi dalam Informatika</h2>
+                <ol>
+                    <li><strong>Simulasi Gerakan pada Game</strong><br>
+                        Dalam sebuah game 2D, posisi karakter pemain ditentukan dalam koordinat Kartesius.</li>
+                    <li><strong>Perencanaan Robotika</strong><br>
+                        Koordinat Kartesius digunakan untuk merancang jalur pergerakan robot dari titik awal ke tujuan tertentu.</li>
+                    <li><strong>Pemrosesan Data Visualisasi</strong><br>
+                        Dalam data berbentuk dua dimensi, grafik koordinat Kartesius membantu memetakan pola dan tren.</li>
+                </ol>
+
+                <h2>H. Kesimpulan</h2>
+                <p>Sistem koordinat Kartesius tidak hanya menjadi dasar dalam studi matematika, tetapi juga merupakan elemen penting dalam pengembangan teknologi dan informatika. Pemahaman yang mendalam tentang sistem ini akan memberikan keuntungan dalam pemodelan, simulasi, dan analisis data di berbagai bidang aplikasi teknologi modern.</p>
+
+                <div class="comment-box">
+
+                    <h3>Leave a Comment</h3>
+
+                    <form class="comment-form">
+                        <input type="text" placeholder="Enter Name">
+                        <input type="email" placeholder="Enter Email">
+                        <textarea rows="10" placeholder="Your Comment"></textarea>
+                        <button type="submit" class="hero-btn red-btn">POST COMMENT</button>
+                    </form>
+                </div>
+
+            </div>
+
+            <div class="materi-right">
+                <h3>Lessons</h3>
+                <div>
+                    <span><a href="materi_pendahuluan.html">Pendahuluan Kalkulus</a></span>
+                </div>
+                <div>
+                    <span><a href="materi_sistem_bilangan.html">Sistem Bilangan Real</a></span>
+                </div>
+                <div>
+                    <span><a href="materi_sistem_bilangan2.html">Operasi pada Bilangan Real</a></span>
+                </div>
+                <div>
+                    <span><a href="materi_pertidaksamaan.html">Pertidaksamaan</a></span>
+                </div>
+                <div>
+                    <span><a href="materi_sistem_koordinat.html">Sistem Koordinat Kartesius</a></span>
+                </div>
+                <div>
+                    <span><a href="materi_tambahan.html">Tips dan Trik Belajar Kalkulus</a></span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <section class="footer">
+        <h4>About Us</h4>
+        <p>Belajar Kalkulus jadi lebih mudah dan seru di CalClass! Ikuti perjalananmu untuk memahami konsep-konsep dasar matematika dengan cara yang interaktif dan menyenangkan.</p>
+        <div class="icons">
+            <i class="fa-brands fa-facebook"></i>
+            <i class="fa-brands fa-twitter"></i>
+            <i class="fa-brands fa-instagram"></i>
+            <i class="fa-brands fa-youtube"></i>
+        </div>
+        <p>Made with <i class="fa fa-heart"></i> by CalClass Group<br>Copyright © 2024</p>
+    </section>
+
+    <!-- JS for Toggle Menu -->
+    <script>
+        var navLinks = document.getElementById("navLinks");
+
+        function showMenu() {
+            navLinks.style.right = "0";
+        }
+        function hideMenu() {
+            navLinks.style.right = "-200px";
+        }
+
+    </script>
+</body>
+</html>
